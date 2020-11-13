@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="BIG5">
+<title>Insert title here</title>
+</head>
+<body>
+<div style="position:fixed;background:gray;width:80%;height:80%;display:block;opacity:0.3"></div>
+
+
+<div style="border-width:1px;border-style:solid;border-color:red;padding:5px;background:white;position:fixed;width:10%;height:10%;top:20px;left:20px;">
+<button style ="text-align:center;line-height:50px;" onclick="test1()">進貨管理</button></div><br><br><br>
+
+<div style="border-width:3px;border-style:double;border-color:red;padding:5px;background:white;position:fixed;width:10%;height:10%;top:120px;left:20px;">
+<button onclick="test2()" >會員管理</button> </div>
+
+
+<div id="but1" style="border-width:3px;border-style:double;border-color:red;padding:5px;background:white;position:fixed;margin-left:12%;width:80%;height:80%;top:0px;left:0px;display:none;">
+<input type="text" id="but1x" value="but1x">
+<input type="text" id="but1xx" value="but1xx">
+<input type="text" id="but1Xxx" value="but1xxx">
+<input type="text" id="but1Xxxx" value="but1xxxx">
+<input type="text" id="but1Xxxxx" value="but1xxxxx">
+<input type="text" id="but1Xxxxxx" value="but1xxxxxx">
+
+<button onclick="test1close()">close</button>
+</div>
+<div id="but2" style="border-width:3px;border-style:double;border-color:green;padding:5px;background:white;position:fixed;margin-left:12%;width:80%;height:80%;top:0px;left:0px;;display:none;"></div>
+
+<script>
+  function test1()
+  {
+   var div1 = document.getElementById("but1");
+   div1.style.display = "block";
+  }
+
+  function test1close()
+  {
+   var div1 = document.getElementById("but1");
+   div1.style.display = "none";
+  
+  }
+</script>
+</body>
+</html>

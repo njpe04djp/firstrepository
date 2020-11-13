@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="tf" dynamic-insert="false" dynamic-update="false" mutable="true" name="model.Suppliers" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="suppliers">
+        <id name="id" type="int">
+            <column name="id"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="companyname" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="companyname"/>
+        </property>
+        <property generated="never" lazy="false" name="address" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="address"/>
+        </property>
+        <property generated="never" lazy="false" name="email" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="email"/>
+        </property>
+        <property generated="never" lazy="false" name="phone" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="phone"/>
+        </property>
+        <property generated="never" lazy="false" name="salesName" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="salesName"/>
+        </property>
+        <property generated="never" lazy="false" name="salesPhone" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="salesPhone"/>
+        </property>
+        <property generated="never" lazy="false" name="salesEmail" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="salesEmail"/>
+        </property>
+    </class>
+</hibernate-mapping>
